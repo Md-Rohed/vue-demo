@@ -1,18 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <header-section/>
+    <FlightSearch/>
+
+    <!-- <anime-section/> -->
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FlightSearch from './components/FlightSearch.vue';
+import HeaderSection from './components/HeaderSection.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderSection,
+    FlightSearch,
+
   }
 }
 </script>
+
 
 <style>
 #app {
